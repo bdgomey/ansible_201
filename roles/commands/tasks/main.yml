@@ -1,0 +1,13 @@
+---
+# tasks file for commands
+
+- name: run commands using ansible
+  ios_command:
+    commands: 
+      - show run
+      - sho ip interface brief
+  register: output
+
+- name: debug message
+  debug:
+    var: output

@@ -1,0 +1,33 @@
+---
+# tasks file for interfaces
+
+- name: set port to no switchport
+  ios_config:
+    lines: 
+      - no switchport
+    parents: "{{ item }}"
+  loop:
+    - interface Gigabitethernet 1/1
+    - interface Gigabitethernet 1/2
+    - interface Gigabitethernet 1/3
+
+- name: configure layer 3 interfaces on switch 1
+  ios_l3_interfaces:
+    config:
+      - name: "{{ item.name }}"
+        ipv4:
+          - address: "{{ item.ip }}"
+    state: replaced
+  with_items:
+    - { name: 'gigabitethernet 1/1', ip: 10.10.103.1/24}
+    - { name: 'gigabitethernet 1/2', ip: 10.10.104.1/24}
+    - { name: 'gigabitethernet 1/3', ip: 10.10.105.1/24}
+
+- name: show ip addresses
+  ios_command:
+    commands: show ip interface brief
+  register: output
+
+- name: debug message
+  debug:
+    var: output

@@ -1,0 +1,9 @@
+- name: main playbook for roles
+  hosts: switches
+  gather_facts: false
+  roles:
+#    - hostnames
+#    - config
+#    - commands
+#    - interfaces
+    - jinja

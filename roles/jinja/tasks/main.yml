@@ -1,0 +1,13 @@
+---
+# tasks file for jinja
+
+- name: set up all interfaces using jinja
+  ios_config:
+    src: jinja.j2
+    match: none
+  register: output
+
+- name: message
+  debug:
+    var: output
+

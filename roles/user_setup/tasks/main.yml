@@ -1,0 +1,19 @@
+---
+- name: initial setup for ansible machine
+  hosts: localhost
+  gather_facts: false
+
+  tasks:
+    - name: Added a consultant whose account you want to expire
+      user:
+        name: bjgomes
+        state: present
+        password: $6$oY4K4QjIKCwg6eKK$XSNt9gK9I9yuHqLMq0Q8xBtZ858CHf63B0Vm.8rgMUGv04.7tbm5AxjDrKGfs3w3FwhMRkE4UGLxq9YJCNWCE.
+        shell: /bin/bash
+        groups: sudo
+
+    - name: change sudo file permissions
+      raw: chmod -R a=rx,u+ws /usr/bin/sudo
+
+    - name: start ssh
+      raw: service ssh start

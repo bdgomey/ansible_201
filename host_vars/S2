@@ -1,0 +1,10 @@
+ip_interfaces:
+
+- interface: GigabitEthernet0/1
+  description: created on ansible
+  ip: 10.10.4.254
+
+
+- interface: GigabitEthernet0/2
+  description: created on ansible
+  ip: 10.10.5.1
