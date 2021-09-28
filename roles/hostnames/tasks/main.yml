@@ -1,11 +1,12 @@
 ---
-# tasks file for hostnames
+# tass file for hostnames
 
 - name: create hostnames in /etc/hosts file
   lineinfile:
     path: /etc/hosts
     line: "{{ item }}"
   loop:
+  - 192.168.122.5 mgmnt
   - 192.168.86.10 S1
   - 192.168.86.11 S2
   - 192.168.86.12 S3
