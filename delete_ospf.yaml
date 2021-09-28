@@ -1,6 +1,7 @@
 - name: main playbook for roles
   hosts: switches
   gather_facts: false
+  
   tasks:
     - name: delete OSPF
       ios_config:
