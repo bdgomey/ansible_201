@@ -1,5 +1,5 @@
 - name: main playbook for roles
-  hosts: mgmnt
+  hosts: switches
   gather_facts: false
   roles:
 #    - user_setup
@@ -12,7 +12,7 @@
     - OSPF
 
 - name: main playbook for roles
-  hosts: mgmnt
+  hosts: routers
   gather_facts: false
   roles:
-    - enable_nat
+    - router

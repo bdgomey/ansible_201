@@ -4,6 +4,10 @@ ip_interfaces:
   description: created on ansible again!
   ip: 10.10.2.1
 
+- interface: GigabitEthernet2/0
+  description: created on ansible again!
+  ip: 10.10.1.254
+
 
 
 
