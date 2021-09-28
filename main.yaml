@@ -1,5 +1,5 @@
 - name: main playbook for roles
-  hosts: switches
+  hosts: mgmnt
   gather_facts: false
   roles:
 #    - user_setup
