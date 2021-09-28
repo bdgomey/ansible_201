@@ -12,7 +12,7 @@ ip_interfaces:
 
 dynamic_routing:
 
-- loopback_number: 1
+- loopback_number: loopback1
   loopback_address: 7.7.7.7
   ip: 192.0.0.0 0.0.0.255
   area: 0
