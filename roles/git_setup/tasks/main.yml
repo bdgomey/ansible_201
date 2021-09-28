@@ -6,5 +6,5 @@
 #- name: set username and password
   #lineinfile:
     #path: ~/.git-credentials
-    #line: https://bdgomey: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@github.com
+    #line: https://bdgomey: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@github.com
 
