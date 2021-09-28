@@ -1,10 +1,5 @@
 ---
-- name: initial setup for ansible machine
-  hosts: localhost
-  gather_facts: false
-
-  tasks:
-    - name: Added a consultant whose account you want to expire
+    - name: Add a user with sudo permissions and start ssh services
       user:
         name: bjgomes
         state: present

@@ -1,5 +1,3 @@
 ---
 - name: set-up git username and email
-  raw:
-    - git config --global user.name "Brian"
-    - git config --global user.email "brian.james.gomes@gmail.com"
+  raw: git config --global user.name "Brian" && git config --global user.email "brian.james.gomes@gmail.com"
