@@ -3,8 +3,8 @@
   raw: git config --global user.name "Brian" && git config --global user.email "brian.james.gomes@gmail.com"
 
 
-- name: set username and password
-  lineinfile:
-    path: ~/.git-credentials
-    line: https://bdgomey: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@github.com
+#- name: set username and password
+  #lineinfile:
+    #path: ~/.git-credentials
+    #line: https://bdgomey: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@github.com
 
