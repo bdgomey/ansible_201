@@ -1,9 +1,11 @@
 - name: main playbook for roles
-  hosts: switches
+  hosts: localhost
   gather_facts: false
   roles:
-#    - hostnames
+#    - user_setup
+    - hostnames
+    - git_setup
 #    - config
 #    - commands
 #    - interfaces
-    - jinja
+#    - jinja
