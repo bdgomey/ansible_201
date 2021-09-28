@@ -5,4 +5,19 @@
   tasks:
     - name: clean ip addresses from all ports on all devices. 
       ios_l3_interfaces:
+        config:
+        - name: "{{ item }}"
         state: deleted
+      loop:
+        - GigabitEthernet 0/1
+        - GigabitEthernet 0/2
+        - GigabitEthernet 0/3
+        - GigabitEthernet 1/1
+        - GigabitEthernet 1/2
+        - GigabitEthernet 1/3
+        - GigabitEthernet 2/1
+        - GigabitEthernet 2/2
+        - GigabitEthernet 2/3
+        - GigabitEthernet 3/1
+        - GigabitEthernet 3/2
+        - GigabitEthernet 3/3
