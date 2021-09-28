@@ -1,6 +1,6 @@
 - name: main playbook for roles
   hosts: switches
-  gather_facts: true
+  gather_facts: false
   roles:
 #    - user_setup
 #    - hostnames
