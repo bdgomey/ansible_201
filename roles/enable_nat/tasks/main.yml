@@ -18,4 +18,4 @@
   ios_config:
     lines:
       - ip nat inside source list 1 interface gigabitethernet 2/0 overload
-      - access list 1 permit any
+      - access-list 1 permit any
