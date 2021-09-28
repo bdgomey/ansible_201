@@ -8,3 +8,12 @@ ip_interfaces:
 - interface: GigabitEthernet0/2
   description: created on ansible
   ip: 10.10.6.1
+
+dynamic_routing:
+
+- loopback_number: 1
+  loopback_address: 4.4.4.4
+  ip: 192.0.0.0 0.0.0.255
+  area: 0
+  router_id: 4.4.4.4
+  OSPF_Process: 1

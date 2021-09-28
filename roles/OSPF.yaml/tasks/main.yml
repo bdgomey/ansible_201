@@ -1,0 +1,7 @@
+---
+
+- name: enable OSPF on all routers
+  ios_config:
+    src: jinja.j2
+    match: none
+  register: output
