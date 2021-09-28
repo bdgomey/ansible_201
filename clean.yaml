@@ -1,0 +1,8 @@
+--- 
+- name: delete all ip addresses from all layer 3 ports
+  hosts: switches
+  gather_facts: false
+  tasks:
+    - name: clean ip addresses from all ports on all devices. 
+      ios_l3_interfaces:
+        state: deleted
