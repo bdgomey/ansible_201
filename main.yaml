@@ -8,7 +8,7 @@
 #    - config
 #    - commands
 #    - interfaces
-#    - jinja
+    - jinja
     - OSPF
 
 - name: main playbook for roles

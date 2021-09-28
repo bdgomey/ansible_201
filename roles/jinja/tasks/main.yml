@@ -5,9 +5,5 @@
   ios_config:
     src: jinja.j2
     match: none
-  register: output
 
-- name: message
-  debug:
-    var: output
 
