@@ -1,9 +1,9 @@
 {% for item in dynamic_routing %}
-#interface {{ item.loopback_number }}
- #no shutdown
- #ip address {{ item.loopback_address }} 255.255.255.255
- #exit
-no router OSPF {{ item.OSPF_Process }}
- #network {{ item.ip }} area {{ item.area }}
+interface {{ item.loopback_number }}
+ no shutdown
+ ip address {{ item.loopback_address }} 255.255.255.255
+ exit
+ router OSPF {{ item.OSPF_Process }}
+ network {{ item.ip }} area {{ item.area }}
 end
 {% endfor %}
