@@ -2,11 +2,14 @@
 - name: enable nat on mgmnt switch
   ios_config:
     lines:
-      - interface gigabitethernet 2/0 
       - no switchport
       - ip address dhcp
       - no shut
-      - exit
+    parents: interface gigabitethernet 2/0
+     
+- name: enable nat on mgmnt switch
+  ios_config:
+    lines:
       - gigabitethernet 2/0 ip nat outside
       - gigabitethernet 1/3 ip nat inside
       - ip nat inside source list 1 interface gigabitethernet 2/0 overload
