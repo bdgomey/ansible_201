@@ -8,6 +8,11 @@
 #    - config
 #    - commands
 #    - interfaces
-    - jinja
+#    - jinja
     - OSPF
+
+- name: main playbook for roles
+  hosts: mgmnt
+  gather_facts: false
+  roles:
     - enable_nat
