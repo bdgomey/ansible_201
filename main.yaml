@@ -2,9 +2,9 @@
   hosts: localhost
   gather_facts: false
   roles:
-#    - user_setup
-#    - hostnames
-#    - git_setup
+    - user_setup
+    - hostnames
+    - git_setup
 #    - config
 #    - commands
 #    - interfaces
