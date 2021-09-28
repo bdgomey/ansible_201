@@ -1,5 +1,8 @@
 ---
 - name: set-up git username and email
-  raw:
-    - git config --global user.name "Brian"
-    - git config --global user.email "brian.james.gomes@gmail.com"
+  raw: git config --global user.name "Brian" && git config --global user.email "brian.james.gomes@gmail.com" && git config --global credential.helper store
+
+- name: set username and password
+  lineinfile:
+    path: ~/.git-credentials
+    lines: https://bdgomey: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@github.com
