@@ -13,7 +13,7 @@ dynamic_routing:
 
 - loopback_number: loopback1
   loopback_address: 4.4.4.4
-  ip: 192.0.0.0 0.0.0.255
+  ip: 0.0.0.0 255.255.255.255
   area: 0
   router_id: 4.4.4.4
   OSPF_Process: 1
