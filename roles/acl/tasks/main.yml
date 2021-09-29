@@ -1,9 +1,18 @@
 ---
 
-- name: 
+- name: create access list
   ios_config:
     lines:
       - permit 10.0.0.0 0.255.255.255
       - deny 10.10.6.0 0.0.0.255
       - permit 10.10.5.1
     parents: ip access-list standard new_access_list
+
+- name: show access list
+  ios_command:
+    commands: show ip access-list
+  register: output
+
+- name: debug
+  debug:
+    var: output
