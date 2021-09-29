@@ -7,7 +7,7 @@
         config:
         - afi: ipv4
           acls:
-          - name: 110
+          - name: 99
             aces:
             - grant: deny
               protocol_options:
