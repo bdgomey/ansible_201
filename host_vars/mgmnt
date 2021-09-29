@@ -1,12 +1,12 @@
-ip_interfaces:
+#ip_interfaces:
 
-- interface: GigabitEthernet1/3
-  description: created on ansible again!
-  ip: 10.10.2.1
+#- interface: GigabitEthernet1/3
+ # description: created on ansible again!
+  #ip: 10.10.2.1
 
-- interface: GigabitEthernet2/0
-  description: created on ansible again!
-  ip: 10.10.1.254
+#- interface: GigabitEthernet2/0
+ # description: created on ansible again!
+ # ip: 10.10.1.254
 
 
 

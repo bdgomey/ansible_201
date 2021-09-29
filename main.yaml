@@ -10,9 +10,5 @@
 #    - interfaces
     - jinja
     - OSPF
-
-- name: main playbook for roles
-  hosts: routers
-  gather_facts: false
-  roles:
-    - router
+#    - acl
+#    - syslog
