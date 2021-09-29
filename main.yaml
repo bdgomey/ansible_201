@@ -3,12 +3,12 @@
   gather_facts: false
   roles:
 #    - user_setup
-#    - hostnames
+    - hostnames
 #    - git_setup
 #    - config
 #    - commands
 #    - interfaces
-    - jinja
-    - OSPF
+#    - jinja
+#    - OSPF
 #    - acl
 #    - syslog
