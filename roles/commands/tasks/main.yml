@@ -3,9 +3,7 @@
 
 - name: run commands using ansible
   ios_command:
-    commands: 
-      - show run
-      - sho ip interface brief
+    commands: sho ip interface brief
   register: output
 
 - name: debug message

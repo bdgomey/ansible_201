@@ -16,9 +16,3 @@
 
       - ntp server 87.81.181.2
       - ntp update-calendar
-
-  register: output
-
-- name: debug message
-  debug:
-    var: output
