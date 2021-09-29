@@ -15,6 +15,7 @@
       - logging trap informational
       - logging userinfo
       - logging host 192.168.122.127
+      - logging timestamp
 
 - name: verify configuration
   ios_command:
