@@ -17,18 +17,7 @@
       - logging host 192.168.122.127
       - logging timestamp
 
-- name: verify configuration
-  ios_command:
-    commands:
-      - show logging | inc monitor logging
-      - show logging | inc Console logging 
-      - show logging | include Log Buffer 
-      - show logging 
-  register: output
 
-- name: output
-  debug:
-    var: output
 
 
 
