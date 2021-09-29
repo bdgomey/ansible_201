@@ -5,12 +5,24 @@
     level: warnings
     name: 192.168.122.124
     state: present
-  register: output
 
-- name: output
-  debug:
-    var: output
 
+- name: change trap level on syslog
+  ios_config:
+    lines: 
+      - logging buffered 5000
+      - no logging console
+      - logging trap informational
+      - logging userinfo
+      - logging host 192.168.122.127
+
+- name: verify configuration
+  ios_command:
+    commands:
+      - show logging | inc monitor logging
+      - show logging | inc Console logging 
+      - show logging | include Log Buffer 
+      - show logging 
 
 
 
