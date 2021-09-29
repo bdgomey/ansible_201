@@ -10,12 +10,8 @@
 - name: change trap level on syslog
   ios_config:
     lines: 
-      - logging buffered 5000
-      - no logging console
-      - logging trap informational
-      - logging userinfo
-      - logging host 192.168.122.127
-      - #logging timestamp
+      - logging console
+
 
 
 
