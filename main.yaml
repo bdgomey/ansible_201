@@ -4,10 +4,10 @@
   roles:
 #    - user_setup
 #    - hostnames
-    - config
+#    - config
 #    - interfaces
-    - jinja
-    - commands
+#    - jinja
+#    - commands
 #    - OSPF
 #    - acl
-#    - syslog
+    - syslog
