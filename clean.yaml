@@ -21,3 +21,7 @@
         - GigabitEthernet 3/1
         - GigabitEthernet 3/2
         - GigabitEthernet 3/3
+    
+    - name: delete ACL
+      ios_acls:
+        state: deleted
