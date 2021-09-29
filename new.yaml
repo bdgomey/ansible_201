@@ -1,17 +1,21 @@
-- name: Replaces device configuration of listed acls with provided configuration
-  cisco.ios.ios_acls:
-    config:
-    - afi: ipv4
-      acls:
-      - name: my_access_list2
-        aces:
-        - grant: deny
-          protocol_options:
-            tcp:
-              syn: true
-          source:
-            address: 10.10.0.0
-            wildcard_bits: 0.0.255.255
-          destination:
-            address: 10.10.11.0
-            wildcard_bits: 0.0.0.255
+- name: main playbook for roles
+  hosts: switches
+  gather_facts: false
+  tasks: 
+    - name: Replaces device configuration of listed acls with provided configuration
+      cisco.ios.ios_acls:
+        config:
+        - afi: ipv4
+          acls:
+          - name: my_access_list2
+            aces:
+            - grant: deny
+              protocol_options:
+                tcp:
+                  syn: true
+              source:
+                address: 10.10.0.0
+                wildcard_bits: 0.0.255.255
+              destination:
+                address: 10.10.11.0
+                wildcard_bits: 0.0.0.255
