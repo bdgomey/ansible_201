@@ -10,7 +10,9 @@
 - name: change trap level on syslog
   ios_config:
     lines: 
-      - logging console
+      - no logging console
+      - logging buffered 5000 warnings
+
 
 
 
