@@ -24,4 +24,6 @@
     
     - name: delete ACL
       ios_config:
-        lines: no ip access-list standard *
+        lines: 
+          - no ip access-list standard *
+          - no logging host 192.168.122.127
