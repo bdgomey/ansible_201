@@ -26,4 +26,33 @@
       ios_config:
         lines: 
           - no ip access-list standard *
+
+    - name: clear syslog settings
+      ios_config:
+        lines: 
           - no logging host 192.168.122.127
+
+    - name: clear syslog settings
+      ios_config:
+        lines: 
+          - logging console
+
+    - name: clear syslog settings
+      ios_config:
+        lines: 
+          - no logging userinfo
+
+    - name: clear syslog settings
+      ios_config:
+        lines: 
+          - no logging buffered
+
+    - name: clear syslog settings
+      ios_config:
+        lines: 
+          - logging console
+
+    - name: clear syslog settings
+      ios_config:
+        lines: 
+          - no logging monitor
