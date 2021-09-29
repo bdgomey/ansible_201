@@ -14,7 +14,7 @@
       - no logging console
       - logging trap informational
       - logging userinfo
-      - logging host 192.168.122.124
+      - logging host 192.168.122.127
       - #logging timestamp
 
 
