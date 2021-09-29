@@ -23,7 +23,11 @@
       - show logging | inc Console logging 
       - show logging | include Log Buffer 
       - show logging 
+  register: output
 
+- name: output
+  debug:
+    var: output
 
 
 
