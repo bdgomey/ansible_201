@@ -1,14 +1,23 @@
 ---
-    - name: Add a user with sudo permissions and start ssh services
-      user:
-        name: bjgomes
-        state: present
-        password: $6$oY4K4QjIKCwg6eKK$XSNt9gK9I9yuHqLMq0Q8xBtZ858CHf63B0Vm.8rgMUGv04.7tbm5AxjDrKGfs3w3FwhMRkE4UGLxq9YJCNWCE.
-        shell: /bin/bash
-        groups: sudo
+- name: syslog
+  ios_logging:
+    dest: monitor
+    level: warnings
+    name: 192.168.122.124
+    state: present
+  register: output
 
-    - name: change sudo file permissions
-      raw: chmod -R a=rx,u+ws /usr/bin/sudo
+- name: output
+  debug:
+    var: output
 
-    - name: start ssh
-      raw: service ssh start
+
+
+
+
+
+
+
+
+
+
