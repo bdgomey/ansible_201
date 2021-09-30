@@ -6,7 +6,7 @@
       - permit 10.0.0.0 0.255.255.255
       - deny 10.10.6.0 0.0.0.255
       - permit 10.10.5.1
-    parents: ip access-list standard new_access_list
+    parents: ip access-list standard  
 
 - name: show access list
   ios_command:
