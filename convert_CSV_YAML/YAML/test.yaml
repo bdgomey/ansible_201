@@ -1,0 +1,37 @@
+main_variable:
+
+  - First_name: Rachel
+    Groups: Operations
+    Host: T1
+    Last_name: Booker
+    Password: iambooker
+    UID: '9012'
+    Username: booker12
+  - First_name: Laura
+    Groups: Developers
+    Host: T2
+    Last_name: Grey
+    Password: iamgrey
+    UID: '2070'
+    Username: grey07
+  - First_name: Craig
+    Groups: Operations
+    Host: T3
+    Last_name: Johnson
+    Password: iamjohnson
+    UID: '4081'
+    Username: johnson81
+  - First_name: Mary
+    Groups: Developers
+    Host: T4
+    Last_name: Jenkins
+    Password: iamjenkins
+    UID: '9346'
+    Username: jenkins46
+  - First_name: Jamie
+    Groups: Operations
+    Host: T5
+    Last_name: Smith
+    Password: iamsmith
+    UID: '5079'
+    Username: smith79
