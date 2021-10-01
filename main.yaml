@@ -1,6 +1,6 @@
 - name: main playbook for roles
   hosts: switches
-  gather_facts: false
+  gather_facts: true
   roles:
 #    - user_setup
 #    - hostnames
@@ -9,5 +9,5 @@
 #    - jinja
 #    - commands
 #    - OSPF
-    - acl
+#    - acl
 #    - syslog
