@@ -1,10 +1,12 @@
 ip_interfaces:
 
 - interface: GigabitEthernet0/0
+  port: no switchport
   description: created on ansible created on ansible again!
   ip: 10.10.9.254
 
-- vlaninterface: VLAN2
+- interface: VLAN2
+  port: switchport
   description: created on ansible created on ansible again!
   ip: 10.10.10.1
 
