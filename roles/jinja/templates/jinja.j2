@@ -1,7 +1,7 @@
 
 
 {% for item in ip_interfaces %}
- {% if [item.vlaninterface %}
+ {% if [item.vlaninterface] %}
   interface {{ item.vlaninterface }}
   description {{ item.description }}
   no shutdown
