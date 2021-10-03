@@ -1,12 +1,20 @@
-{% set VLAN = VLAN2 %}
+
 
 {% for item in ip_interfaces %}
 interface {{ item.interface }}
+ no switchport
  description {{ item.description }}
  no shutdown
- {% if [item.interface] != [VLAN] %}
- no switchport
- {% endif %}
  ip address {{ item.ip }} 255.255.255.0
  exit
+{% endfor %}
+
+{% for item in ip_interfaces %}
+ {% if [item.vlaninterface %}
+ interface {{ item.vlaninterface }}
+ description {{ item.description }}
+ no shutdown
+ ip address {{ item.ip }} 255.255.255.0
+ exit
+ {% endif %}
 {% endfor %}

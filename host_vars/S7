@@ -4,7 +4,7 @@ ip_interfaces:
   description: created on ansible created on ansible again!
   ip: 10.10.9.254
 
-- interface: VLAN2
+- vlaninterface: VLAN2
   description: created on ansible created on ansible again!
   ip: 10.10.10.1
 
