@@ -7,3 +7,12 @@ ip_interfaces:
 - interface: VLAN 2
   description: created on ansible created on ansible again!
   ip: 10.10.10.1
+
+dynamic_routing:
+
+- loopback_number: loopback1
+  loopback_address: 8.8.8.8
+  ip: 10.0.0.0 0.255.255.255
+  area: 0
+  router_id: 8.8.8.8
+  OSPF_Process: 1
