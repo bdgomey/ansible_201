@@ -16,7 +16,7 @@ dynamic_routing:
 
 - loopback_number: loopback1
   loopback_address: 6.6.6.6
-  ip: 10.0.0.0 0.255.255.255
+  ip: 0.0.0.0 255.255.255.255
   area: 0
   router_id: 6.6.6.6
   OSPF_Process: 1
