@@ -5,6 +5,4 @@
 - name: set up SNMP on network devices
   ios_config:
     lines:
-      - snmp-server community public ro
-      - snmp-server community public rw 
-      
+      - 
