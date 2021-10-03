@@ -7,9 +7,4 @@ interface {{ item.interface }}
  no shutdown
  ip address {{ item.ip }} 255.255.255.0
  exit
-interface {{ item.vlaninterface }}
- description {{ item.description }}
- no shutdown
- ip address {{ item.ip }} 255.255.255.0
- exit
 {% endfor %}
