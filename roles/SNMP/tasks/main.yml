@@ -15,9 +15,6 @@
       - snmp-server community public ro
       - snmp-server host 192.168.122.116 public
       - snmp-server enable traps
-      - snmp-server enable traps frame-relay
-      - snmp-server enable traps envmon temperature
-      - snmp-server enable traps bgp
       - snmp-server enable traps snmp
 - name: Write Memory
   ios_command:
