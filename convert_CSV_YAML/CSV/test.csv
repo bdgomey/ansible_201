@@ -1,0 +1,6 @@
+Host,Username,UID,First_name,Last_name,Groups,Password,
+T1,brian,9999,Rachel,Booker,Operations,iambooker
+T2,grey07,2070,Laura,Grey,Developers,iamgrey
+T3,johnson81,4081,Craig,Johnson,Operations,iamjohnson
+T4,jenkins46,9346,Mary,Jenkins,Developers,iamjenkins
+T5,smith79,5079,Jamie,Smith,Operations,iamsmith
