@@ -10,4 +10,5 @@
 #    - commands
     - OSPF
 #    - acl
-#    - syslog
+    - syslog
+    - SNMP
