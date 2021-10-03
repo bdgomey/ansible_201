@@ -2,7 +2,7 @@
 interface {{ item.interface }}
  description {{ item.description }}
  no shutdown
- {% if lookup('vars', item.interface) != VLAN2 %}
+ {% if lookup('hostvars', item.interface) != VLAN2 %}
  no switchport
  {% endif %}
  ip address {{ item.ip }} 255.255.255.0
