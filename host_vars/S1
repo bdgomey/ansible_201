@@ -10,10 +10,10 @@ ip_interfaces:
   description: created on ansible created on ansible again!
   ip: 10.10.3.1
 
-#- interface: GigabitEthernet0/3
-#  port: no switchport
-  #description: created on ansible created on ansible again!
-  #ip: 10.10.2.254
+- interface: GigabitEthernet0/3
+  port: no switchport
+  description: created on ansible created on ansible again!
+  ip: 10.10.2.254
 
 dynamic_routing:
 
