@@ -1,5 +1,5 @@
 - name: main playbook for roles
-  hosts: switches
+  hosts: S7
   gather_facts: false
   roles:
 #    - user_setup
