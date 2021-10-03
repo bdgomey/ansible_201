@@ -2,7 +2,9 @@
 interface {{ item.interface }}
  description {{ item.description }}
  no shutdown
+ {% if {{ item.interface }} != VLAN2 %}
  no switchport
+ {% endif %}
  ip address {{ item.ip }} 255.255.255.0
  exit
 {% endfor %}
