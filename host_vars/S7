@@ -6,7 +6,7 @@ ip_interfaces:
   ip: 10.10.9.254
 
 - interface: VLAN2
-  port: switchport
+  port: " "
   description: created on ansible created on ansible again!
   ip: 10.10.10.1
 
