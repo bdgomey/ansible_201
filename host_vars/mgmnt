@@ -1,6 +1,7 @@
 ip_interfaces:
 
 - interface: GigabitEthernet1/2
+  port: no switchport
   description: created on ansible again!
   ip: 10.10.2.1
 
