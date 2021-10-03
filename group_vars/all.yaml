@@ -1,5 +1,6 @@
 passwd_hash: $6$oY4K4QjIKCwg6eKK$XSNt9gK9I9yuHqLMq0Q8xBtZ858CHf63B0Vm.8rgMUGv04.7tbm5AxjDrKGfs3w3FwhMRkE4UGLxq9YJCNWCE.
 ansible_connection: network_cli
+ansible_network_os: ios
 ansible_user: brian
 ansible_password: cisco
 ansible_sudo_pass: cisco

@@ -8,6 +8,6 @@
 #    - interfaces
 #    - jinja
 #    - commands
-#    - OSPF
+    - OSPF
 #    - acl
 #    - syslog
