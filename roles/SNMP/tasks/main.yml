@@ -5,4 +5,21 @@
 - name: set up SNMP on network devices
   ios_config:
     lines:
-      - 
+      - snmp-server user U1 G1 v3 auth sha a-pass priv aes 128 e-pass
+    parents: snmp-server group G1 v3 priv
+
+- name: set up SNMP on network devices
+  ios_config:
+    lines:      
+      - snmp-server community private rw
+      - snmp-server community public ro
+      - snmp-server host 192.168.122.116 public
+      - snmp-server enable traps
+      - snmp-server enable traps frame-relay
+      - snmp-server enable traps envmon temperature
+      - snmp-server enable traps bgp
+      - snmp-server enable traps snmp
+- name: Write Memory
+  ios_command:
+    commands: wr 
+
