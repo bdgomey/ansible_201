@@ -1,0 +1,16 @@
+- name: main playbook for roles
+  hosts: switches
+  gather_facts: false
+  tasks:
+
+    - name: Set OSPF with OSPFv2 resource module
+      ios_ospfv2:
+        config:
+          processes:
+          - process_id: 1            
+            adjacency:  
+              - max_adjacency: 25
+            network:
+              address: 10.0.0.0
+              wildcard_bits: 0.255.255.255
+              area: 0
