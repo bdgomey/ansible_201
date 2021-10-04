@@ -4,11 +4,6 @@
 - name: configure Layer 3 switches
   ios_config:
     lines: 
-      - vtp mode transparent 
-      - spanning-tree mode rapid-pvst
-      - udld enable
-      - errdisable recovery cause all
-      - port-channel load-balance src-dst-ip
       - ip name-server 8.8.8.8
 
       - snmp-server community private RW
