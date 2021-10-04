@@ -6,3 +6,7 @@
     - name: delete OSPF
       ios_config:
         lines: no router OSPF 1
+
+    - name: delete SNMP server
+      ios_config:
+        lines: no snmp-server
