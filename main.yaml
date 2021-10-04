@@ -4,9 +4,9 @@
   roles:
 #    - user_setup
 #    - hostnames
-#    - config
+    - config
 #    - interfaces
-#    - jinja
+    - jinja
 #    - commands
 #    - OSPF
 #    - acl
