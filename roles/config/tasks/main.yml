@@ -4,8 +4,6 @@
 - name: configure Layer 3 switches
   ios_config:
     lines: 
-      - ip name-server 8.8.8.8
-
       - snmp-server community private RW
       - snmp-server community public RO
 
