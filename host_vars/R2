@@ -12,10 +12,10 @@ ip_interfaces:
 dynamic_routing:
 
 - loopback_number: loopback1
-  loopback_address: 3.3.3.3
+  loopback_address: 2.2.2.2
   ip: 0.0.0.0 255.255.255.255
   area: 0
-  router_id: 3.3.3.3
+  router_id: 2.2.2.2
   OSPF_Process: 1
 
 
