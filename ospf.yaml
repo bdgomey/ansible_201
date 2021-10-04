@@ -19,7 +19,7 @@
       cisco.ios.ios_ospfv2:
         config:
           state: gathered
-        register: output
+      register: output
     
     - name: debug
       debug:
