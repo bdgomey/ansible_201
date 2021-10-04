@@ -11,6 +11,6 @@
               adjacency:  
                 max_adjacency: 25
               network:
-                address: 10.0.0.0
-                wildcard_bits: 0.255.255.255
-                area: 0
+                - address: 10.0.0.0
+                - wildcard_bits: 0.255.255.255
+                - area: 0
