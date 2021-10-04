@@ -5,5 +5,4 @@
   tasks:
     - name: delete OSPF
       ios_config:
-        lines: no network {{ dynamic_routing.ip }}
-        parents: router OSPF 1
+        lines: no router OSPF 1
