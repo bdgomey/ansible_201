@@ -1,24 +1,20 @@
 ip_interfaces:
 
+
 - interface: GigabitEthernet0/1
-  port: no switchport
   description: created on ansible
-  ip: 10.10.4.254
+  ip: 10.10.3.254
 
 
 - interface: GigabitEthernet0/2
-  port: no switchport
   description: created on ansible
-  ip: 10.10.5.1
+  ip: 10.10.6.1
 
 dynamic_routing:
 
 - loopback_number: loopback1
-  loopback_address: 3.3.3.3
+  loopback_address: 4.4.4.4
   ip: 0.0.0.0 255.255.255.255
   area: 0
-  router_id: 3.3.3.3
+  router_id: 4.4.4.4
   OSPF_Process: 1
-
-
-  
