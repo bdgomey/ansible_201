@@ -8,7 +8,7 @@
 #    - interfaces
 #    - jinja
 #    - commands
-#    - OSPF
+    - OSPF
 #    - acl
 #    - syslog
-    - SNMP
+#    - SNMP
