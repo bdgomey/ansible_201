@@ -18,7 +18,7 @@
     - name: Gather OSPFV2 provided configurations
       cisco.ios.ios_ospfv2:
         config:
-          state: gathered
+        state: gathered
       register: output
     
     - name: debug
