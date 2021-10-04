@@ -8,13 +8,13 @@
         config:
           processes:
             - process_id: 2
-            areas:
-              - area_id: 1
-                capability: true
-            network:
-              - address: 0.0.0.0
-              - wildcard_bits: 255.255.255.255
-              - area: 1
+              areas:
+                - area_id: 1
+                  capability: true
+              network:
+                - address: 0.0.0.0
+                - wildcard_bits: 255.255.255.255
+                - area: 1
 
     - name: Gather OSPFV2 provided configurations
       cisco.ios.ios_ospfv2:
