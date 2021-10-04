@@ -11,8 +11,6 @@
 - name: set up SNMP on network devices
   ios_config:
     lines:      
-      - snmp-server community private rw
-      - snmp-server community public ro
       - snmp-server host 192.168.122.116 public
       - snmp-server enable traps
       - snmp-server enable traps snmp
