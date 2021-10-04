@@ -14,3 +14,13 @@
                 - address: 10.0.0.0
                 - wildcard_bits: 0.255.255.255
                 - area: 0
+
+    - name: Gather OSPFV2 provided configurations
+      cisco.ios.ios_ospfv2:
+        config:
+          state: gathered
+        register: output
+    
+    - name: debug
+      debug:
+        var: output 
