@@ -18,8 +18,8 @@
           authentication:
             enable: true
         network:
-          address: 198.51.100.0
-          wildcard_bits: 0.0.0.255
+          address: 10.0.0.0
+          wildcard_bits: 0.0.0.0
           area: 1
 
     - name: Gather OSPFV2 provided configurations
