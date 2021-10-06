@@ -19,8 +19,8 @@
                 enable: true
             network:
               - address: 10.0.0.0
-                wildcard_bits: 0.0.0.0
-                area: 1
+              - wildcard_bits: 0.0.0.0
+              - area: 1
 
     - name: Gather OSPFV2 provided configurations
       cisco.ios.ios_ospfv2:
