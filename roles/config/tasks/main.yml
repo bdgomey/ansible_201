@@ -4,8 +4,6 @@
 - name: configure Layer 3 switches
   ios_config:
     lines: 
-      - snmp-server community private RW
-      - snmp-server community public RO
-
-      - ntp server 87.81.181.2
-      - ntp update-calendar
+      - ip address 10.10.10.10
+      - 
+    parents: interface gigabitethernet 0/1
